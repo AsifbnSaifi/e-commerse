@@ -7,6 +7,7 @@ import ProductsList from './componenets/ProductsList';
 import AddtoCardPage from './componenets/AddtoCardPage';
 import PaymentSuccess from './pages/PaymentSuccess';
 import PaymentFailed from './pages/PaymentFailed';
+import Admin from './pages/Admin';
 
 
 
@@ -30,6 +31,10 @@ const appRouting = createBrowserRouter([
           {
             path : '/failed',
             element : <PaymentFailed/>
+          },
+          {
+            path : '/admin',
+            element : <Admin/>
           }
       ]
       }

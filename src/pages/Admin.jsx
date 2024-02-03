@@ -43,48 +43,48 @@ const Admin = () => {
           </div>
 
           <div  className="space-x-3 mb-1">
-            <label htmlFor="desp">Description</label> {/* corrected htmlFor */}
+            <label htmlFor="desp">Description</label> 
             <input type="text" name="desp" value={formData.desp} onChange={handleChange} 
              className="border-2 border-black"/>
           </div>
 
           <div  className="space-x-3 mb-1">
-            <label htmlFor="price">Price</label> {/* corrected htmlFor */}
+            <label htmlFor="price">Price</label> 
             <input type="text" name="price" value={formData.price} onChange={handleChange}
              className="border-2 border-black" />
           </div>
 
           <div  className="space-x-3 mb-1">
-            <label htmlFor="category">Category</label> {/* corrected htmlFor */}
+            <label htmlFor="category">Category</label>
             <input type="text" name="catagory" value={formData.catagory} onChange={handleChange}
              className="border-2 border-black" />
           </div>
 
           <div  className="space-x-3 mb-1">
-            <label htmlFor="category">Brand</label> {/* corrected htmlFor */}
+            <label htmlFor="category">Brand</label> 
             <input type="text" name="brand" value={formData.brand} onChange={handleChange}
              className="border-2 border-black" />
           </div>
 
           <div  className="space-x-3 mb-1">
-            <label htmlFor="category">Rating</label> {/* corrected htmlFor */}
+            <label htmlFor="category">Rating</label> 
             <input type="text" name="rating" value={formData.rating} onChange={handleChange}
              className="border-2 border-black" />
           </div>
 
           <div  className="space-x-3 mb-1">
-            <label htmlFor="stock">Stock</label> {/* corrected htmlFor */}
+            <label htmlFor="stock">Stock</label> 
             <input type="text" name="stock" value={formData.stock} onChange={handleChange}
              className="border-2 border-black" />
           </div>
 
           <div className="space-x-3 mb-1">
-            <label htmlFor="image">Image</label> {/* corrected htmlFor */}
+            <label htmlFor="image">Image</label> 
             <input type="text" name="image" value={formData.image} onChange={handleChange} 
              className="border-2 border-black"/>
           </div>
 
-          <button className="py-2 px-4 bg-blue-500" type="submit">Save</button> {/* changed type to "submit" */}
+          <button className="py-2 px-4 bg-blue-500" type="submit">Save</button> 
         </div>
       </form>
     </div>

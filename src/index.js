@@ -8,6 +8,9 @@ import AddtoCardPage from './componenets/AddtoCardPage';
 import PaymentSuccess from './pages/PaymentSuccess';
 import PaymentFailed from './pages/PaymentFailed';
 import Admin from './pages/Admin';
+import Dashboard from './pages/Dashboard';
+import Users from './componenets/Users';
+import Register from './pages/Register';
 
 
 
@@ -33,9 +36,25 @@ const appRouting = createBrowserRouter([
             element : <PaymentFailed/>
           },
           {
-            path : '/admin',
-            element : <Admin/>
-          }
+            path : '/register',
+            element : <Register/>
+          },
+         
+          {
+            path: '/dashboard', // Corrected the path name
+            element: <Dashboard />,
+            children: [
+              {
+                path: 'adddata',
+                element: <Admin />,
+              },
+              {
+                path: 'users',
+                element: <Users/>,
+              },
+            ],
+          },
+    
       ]
       }
 ])
